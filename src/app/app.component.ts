@@ -2,13 +2,19 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 // import { Observable } from 'rxjs';
 import { EmployeeService } from './employee.service';
 import { jsPDF } from "jspdf";
+import 'jspdf-autotable';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent {
+
+  // isShown: boolean = false;
 
   @ViewChild('content', {static: false}) el!: ElementRef;
   title = 'mawang';
@@ -19,14 +25,19 @@ export class AppComponent {
   }
 
   makePDF(){
-    // const doc = new jsPDF();
-    // const pageHeight = doc.internal.pageSize.height;
-    // const pageWidth = doc.internal.pageSize.width;
-    // doc.setFontSize(14);
-    let pdf = new jsPDF('p','pt','a3');
-    pdf.html(this.el.nativeElement, {
+    var doc = new jsPDF('p','pt', 'a4');
+    // margin: [1, 1, 20, 10],
+    // doc.setFontSize(12);
+    // // doc.text('Angular PDF Table', 11, 8);
+    // doc.setFontSize(12);
+    // doc.setTextColor(99);
+
+    // let pdf = new jsPDF('p','pt','a3');
+    doc.html(this.el.nativeElement, {
+      
       callback: (pdf)=> {
-        pdf.save("demo.pdf");
+        // pdf.output('dataurlnewwindow'),
+        doc.save("demo.pdf");
       }
     });
 

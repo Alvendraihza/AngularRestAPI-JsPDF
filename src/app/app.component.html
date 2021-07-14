@@ -48,18 +48,26 @@
 <button mat-raised-button color="primary" (click)="makePDF()">PRINT</button>
 <br>
 <div id="content" #content>
-<table class="table" border="1">
+  <h2 align="center">PT.MANDIRI&nbsp;UTAMA&nbsp;FINANCE</h2>
+  <br>
+  <p>&nbsp;&nbsp;NAMA: </p>
+  <br>
+  <p>&nbsp;&nbsp;ALAMAT: </p>
+  <br>
+<table class="table" border="1" align="center">
 	<thead>
 		<th>No.</th>
-		<th>JUDUL</th>
-		<th>ISI</th>
+		<th>Name</th>
+    <th>Username</th>
+		<th>E-mail</th>
 	</thead>
 	<tbody>
 		<ng-container *ngIf="employees$ | async as employees; else elseBlock">
 			<tr *ngFor="let employee of employees$ | async; let i = index">
 				<td>{{employee.id}}</td>
-				<td>{{employee.title}}</td>
-				<td>{{employee.body}}</td>
+				<td>{{employee.name}}</td>
+        <td>{{employee.username}}</td>
+				<td>{{employee.email}}</td>
 			</tr>
 		</ng-container>
 		<ng-template #elseBlock>
