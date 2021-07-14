@@ -45,15 +45,18 @@
 </p>
 <p>Here are some links to help you get started:</p>
 <br>
-<button mat-raised-button color="primary" (click)="makePDF()">PRINT</button>
 <br>
-<div id="content" #content>
+<button mat-raised-button color="primary" (click)="showTable()">Show Content</button>
+<br>
+<div id="content" #content *ngIf="isShown" align="center">
+  <div class="consec" align="justify">
   <h2 align="center">PT.MANDIRI&nbsp;UTAMA&nbsp;FINANCE</h2>
   <br>
-  <p>&nbsp;&nbsp;NAMA: </p>
+  <p>&nbsp;&nbsp;NAMA &nbsp; &nbsp;: </p>
   <br>
-  <p>&nbsp;&nbsp;ALAMAT: </p>
+  <p>&nbsp;&nbsp;ALAMAT : </p>
   <br>
+</div>
 <table class="table" border="1" align="center">
 	<thead>
 		<th>No.</th>
@@ -79,5 +82,8 @@
 		</ng-template>
 	</tbody>
 </table>
+<br>
+<button mat-raised-button color="primary" (click)="makePDF()">PRINT</button>
+<br>
 </div>
 <router-outlet></router-outlet>

@@ -14,7 +14,7 @@ import 'jspdf-autotable';
 
 export class AppComponent {
 
-  // isShown: boolean = false;
+  isShown: boolean = false;
 
   @ViewChild('content', {static: false}) el!: ElementRef;
   title = 'mawang';
@@ -24,8 +24,12 @@ export class AppComponent {
     this.employees$ = [];
   }
 
+  showTable() {
+    this.isShown = this.isShown ? false : true;
+  }
+
   makePDF(){
-    var doc = new jsPDF('p','pt', 'a4');
+    var doc = new jsPDF('p','pt','a4');
     // margin: [1, 1, 20, 10],
     // doc.setFontSize(12);
     // // doc.text('Angular PDF Table', 11, 8);
