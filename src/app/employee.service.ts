@@ -8,4 +8,8 @@ export class EmployeeService {
   getEmployees() {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
+
+  // getUsers() {
+  //   return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  // }
 }

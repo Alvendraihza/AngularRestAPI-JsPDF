@@ -10,8 +10,6 @@ import 'jspdf-autotable';
   styleUrls: ['./app.component.css']
 })
 
-
-
 export class AppComponent {
 
   isShown: boolean = false;
