@@ -1,12 +1,3 @@
-:host {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  color: #333;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 h1,
 h2,
 h3,
@@ -261,8 +252,8 @@ svg#clouds {
   }
 }
 
-p,h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+p,h2,table {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
 }
 
@@ -281,8 +272,12 @@ th,
 td {
   padding: 10px;
   /* border:  solid 0.1px; */
-  text-align: center;
+  /* text-align: center; */
   font-size: 10px;
+}
+
+.table td{
+  text-align: center;
 }
 
 .consec{
@@ -290,6 +285,14 @@ td {
   padding-left: 20px;
   float: 1;
   /* background-color:blue; */
+}
+
+table .tb1 tr{
+  text-align: left;
+}
+
+table .tb2 tr{
+  text-align: left;
 }
 
 .consec1{
