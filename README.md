@@ -1,6 +1,6 @@
-# PROSES SOLVING :
+# SOLVE IF :
 
-- Merapihkan Format JsPDF
+- Merapihkan Format JsPDF (Solved) ✓
 - Data Binding diluar table
 
 # CARA CLONE :
