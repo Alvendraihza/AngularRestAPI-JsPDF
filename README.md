@@ -1,7 +1,7 @@
 # SOLVE IF :
 
 - Merapihkan Format JsPDF (Solved) ✓
-- Data Binding diluar table
+- Data Binding diluar table (Solved) ✓
 
 # CARA CLONE :
 
