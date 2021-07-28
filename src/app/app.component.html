@@ -111,6 +111,12 @@
   <br>
 </div>
 </section>
+
+<br>
+<button mat-raised-button color="primary">PRINT</button>
+<button mat-raised-button color="primary" (click)="openPDF()">DOWNLOAD</button>
+<br>
+</div>
 <table class="table" border="1" align="center" id="dataTable">
 	<thead>
 		<th>No.</th>
@@ -119,15 +125,15 @@
 		<th>E-mail</th>
 	</thead>
 	<tbody>
-		<ng-container *ngIf="employees$ | async as employees; else elseBlock">
-			<tr *ngFor="let employee of employees$ | async; let i = index">
-				<td>{{employee.id}}</td>
-				<td>{{employee.name}}</td>
-        <td>{{employee.username}}</td>
-				<td>{{employee.email}}</td>
+		<ng-container>
+			<tr>
+				<td>Hali</td>
+				<td>sd</td>
+        <td>wdw</td>
+				<td>wdwd</td>
 			</tr>
 		</ng-container>
-		<ng-template #elseBlock>
+		<ng-template>
 			<tr>
 				<td colspan="4">
 					Loading Employees...
@@ -136,8 +142,4 @@
 		</ng-template>
 	</tbody>
 </table>
-<br>
-<button mat-raised-button color="primary" (click)="makePDF()">PRINT</button>
-<br>
-</div>
 <router-outlet></router-outlet>

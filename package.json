@@ -24,6 +24,7 @@
     "html2canvas": "^1.1.4",
     "jspdf": "^2.3.1",
     "jspdf-autotable": "^3.5.15",
+    "pdfmake": "^0.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -33,7 +34,8 @@
     "@angular/cli": "~11.2.14",
     "@angular/compiler-cli": "~11.2.14",
     "@types/jasmine": "~3.6.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.17",
+    "@types/pdfmake": "^0.1.18",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
