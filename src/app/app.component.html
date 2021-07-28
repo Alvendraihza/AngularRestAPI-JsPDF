@@ -1,6 +1,7 @@
 <!-- Toolbar -->
 <html>
  <body>
+  <div id="wrapper">
 <div class="toolbar" role="banner">
   <img
     width="40"
@@ -47,34 +48,40 @@
 </p>
 <p>Here are some links to help you get started:</p>
 <br>
-<button mat-raised-button color="primary" (click)="showTable()">Show Content</button>
 <br>
-<div id="content" #content *ngIf="isShown" align="center">
+<div id="content" #content>
   <br>
   <br>
-  <div class="judul"><img src="assets\muf.png" width="auto" height="60"></div>
+  <h2 align="center"><b>PT. MANDIRI UTAMA FINANCE</b></h2>
+  <h2 align="center"><b>HISTORY PAYMENT</b></h2>
   <section class="container">
   <div class="consec">
   <br>
   <br>
   <table class="tb1">
     <tr>
-      <td>Nama</td>
+      <td>NO KONTRAK</td>
       <td>&nbsp;:&nbsp;</td>
-      <td>{{title}}</td>
+      <td>030620002031</td>
     </tr>
     <tr>
-      <td>TTL</td>
+      <td>NAMA</td>
       <td>&nbsp;:&nbsp;</td>
-      <td>13th September 1997</td>
+      <td>YUNIATI</td>
     </tr>
     <tr>
-      <td>Umur</td>
+      <td>ALAMAT KTP</td>
       <td>&nbsp;:&nbsp;</td>
-      <td>24 Years old</td>
+      <td>JL KEDONDONG, 001/011, LAWEYAN, KERTEN,
+        PROVINSI JAWA TENGAH 57137</td>
     </tr>
     <tr>
-      <td>Alamat</td>
+      <td>ALAMAT TINGGAL</td>
+      <td>&nbsp;:&nbsp;</td>
+      <td>Dublin, Ireland</td>
+    </tr>
+    <tr>
+      <td>ALAMAT USAHA</td>
       <td>&nbsp;:&nbsp;</td>
       <td>Dublin, Ireland</td>
     </tr>
@@ -86,60 +93,226 @@
   <br>
   <table class="tb2">
     <tr>
-      <td>Kode Pos</td>
+      <td>NAMA CMO</td>
       <td>&nbsp;:&nbsp;</td>
-      <td>H18</td>
+      <td>AGUS SETIAWAN</td>
     </tr>
     <tr>
-      <td>Tipe Mobil</td>
+      <td>KENDARAAN</td>
       <td>&nbsp;:&nbsp;</td>
-      <td>Mitsu. Lancer Evo X</td>
+      <td>HONDA - BEAT CBS FI</td>
     </tr>
-    <tr>
-      <td>Tipe Motor</td>
-      <td>&nbsp;:&nbsp;</td>
-      <td>Legenda</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>&nbsp;:&nbsp;</td>
-      <td>Unpaid</td>
-    </tr>
+
   </table>
   <br>
+</div>
+  <div class="consec2">
+    <br>
+    <br>
+    <table class="tb3">
+      <tr>
+        <td>NO. RANGKA</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>MH1JM2118HK589806</td>
+      </tr>
+      <tr>
+        <td>NO. MESIN /
+          NO.SERI</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>JM21E1574733 </td>
+      </tr>
+      <tr>
+        <td>KOLEKTOR</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>CARA BAYAR</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>KASIR</td>
+      </tr>
+      <tr>
+        <td>NAMA CFO</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>AGUS SETIAWAN</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+  </div>
+  <div class="consec3">
+    <br>
+    <br>
+    <table class="tb4">
+      <tr>
+        <td>TENOR</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>NO. POLISI</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>AD5043ZH</td>
+      </tr>
+      <tr>
+        <td>PRINTED</td>
+        <td>&nbsp;:&nbsp;</td>
+        <td>09-Jul-21</td>
+      </tr>
+    </table>
+  <br>
   <br>
   <br>
 </div>
-</section>
 
+</section>
 <br>
-<button mat-raised-button color="primary">PRINT</button>
-<button mat-raised-button color="primary" (click)="openPDF()">DOWNLOAD</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 </div>
-<table class="table" border="1" align="center" id="dataTable">
-	<thead>
-		<th>No.</th>
-		<th>Name</th>
-    <th>Username</th>
-		<th>E-mail</th>
-	</thead>
-	<tbody>
-		<ng-container>
+<div id="container">
+<table class="tables" border="1" align="center" id="dataTable">
+	<tr>
+    <th rowspan="2" width="50px">KE</th>
+		<th colspan="3">Tanggal</th>
+
+    <th rowspan="2">Hari</th>
+		<th rowspan="2">NO. REFRENCE</th>
+    <th rowspan="2">KOLEKTOR</th>
+    <th rowspan="2">ANGSURAN</th>
+    <th rowspan="2">KET. PAID</th>
+    <th rowspan="2">KET.</th>
+    <th colspan="2">DENDA</th>
+
+    <th rowspan="2" width="105px">NO. PDC/COLLECTING AGENTS</th>
+    <th rowspan="2">USER ID</th>
+  </tr>
 			<tr>
-				<td>Hali</td>
-				<td>sd</td>
-        <td>wdw</td>
-				<td>wdwd</td>
+				<td align="center">DUE</td>
+        <td align="center">PAID</td>
+				<td align="center">KOLEKSI</td>
+        <td align="center">CALC</td>
+        <td align="center">PAID</td>
 			</tr>
-		</ng-container>
-		<ng-template>
-			<tr>
-				<td colspan="4">
-					Loading Employees...
-				</td>
+      <tr>
+				<td>1</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td>MUF ANGSURAN</td>
+        <td>EGA Y</td>
 			</tr>
-		</ng-template>
-	</tbody>
+      <tr>
+				<td>2</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>EGA Y</td>
+			</tr>
+      <tr>
+				<td>3</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>EGA Y</td>
+			</tr>
+      <tr>
+				<td>4</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>EGA Y</td>
+			</tr>
+      <tr>
+				<td>5</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>EGA Y</td>
+			</tr>
+      <tr>
+				<td>6</td>
+				<td>24 - Oct - 20</td>
+        <td>24 - Oct - 20</td>
+				<td>24 - Oct - 20</td>
+        <td>wdwd</td>
+        <td>wdwd</td>
+        <td>KASIR</td>
+        <td>41.000</td>
+        <td>KASIR</td>
+        <td>PAID</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>EGA Y</td>
+			</tr>
+      <tr>
+				<td colspan="4">Total</td>
+				<td>897</td>
+        <td></td>
+				<td></td>
+        <td>2.157.802</td>
+        <td></td>
+        <td></td>
+        <td>41.000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+			</tr>
 </table>
+</div>
+<br>
+<!-- <button mat-raised-button color="primary">PRINT</button>
+<button mat-raised-button color="primary" (click)="openPDF()">DOWNLOAD</button> -->
+<br>
+</div>
 <router-outlet></router-outlet>
